@@ -170,3 +170,16 @@ synchronized 关键字经过javac编译后，会在同步块前后生成**monite
 
 通过Java团队对于锁的优化后，synchronized和ReenterLock的性能是差不多的了。
 
+要了解偏向锁和轻量级锁，首先问偶们先要介绍一下HotSport虚拟机对象头（Object Header）的组成部分。对象头分为两个部分，一个是存储对象自身的运行时数据，如哈希码（HashCode）、GC年龄分代（Generational GC Age）等。这部分在32位和64位Java虚拟机中占用32个比特和64个比特，官方称之为Mark Word。这是实现偏向锁和自旋锁的关键。
+
+
+
+
+
+
+
+## 参考资料
+
+- [美团技术团队：不可不说的Java"锁"事](https://tech.meituan.com/2018/11/15/java-lock.html)
+- 周志明：《深入理解JVM第三版》
+
