@@ -166,11 +166,15 @@ synchronized 关键字经过javac编译后，会在同步块前后生成**monite
 
 在**执行moniterenter指令**的时候，首先要去尝试获取对象的锁，如果这个对象没有被锁定或者当前线程已经持有了这个对象的锁，就把锁的计数器加一。而在执行moniterexit指令的时候将计数器的值减一。一旦计数器的值为0，这个锁就被释放了。如果获取当前锁对象失败，那么当前线程就应该阻塞等待，直到请求锁定的对象被持有它的线程释放为止。
 
-在JDK1.5之前，synchronized的性能是很差的。
+在JDK1.5之前，synchronized的性能是很差的。（因为是阻塞）
 
 通过Java团队对于锁的优化后，synchronized和ReenterLock的性能是差不多的了。
 
 要了解偏向锁和轻量级锁，首先问偶们先要介绍一下HotSport虚拟机对象头（Object Header）的组成部分。对象头分为两个部分，一个是存储对象自身的运行时数据，如哈希码（HashCode）、GC年龄分代（Generational GC Age）等。这部分在32位和64位Java虚拟机中占用32个比特和64个比特，官方称之为Mark Word。这是实现偏向锁和自旋锁的关键。
+
+![image-20210522172657300](https://i.loli.net/2021/05/22/yUDXnxGFtrcCv2Y.png)
+
+
 
 
 
