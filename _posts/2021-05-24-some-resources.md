@@ -10,8 +10,6 @@ tags: Java
 
 ## 技术博客or优质资源
 
-### 美团技术博客
-
 #### Java
 
 [不可不说的Java"锁"事](https://tech.meituan.com/2018/11/15/java-lock.html)
@@ -25,6 +23,8 @@ tags: Java
 [深入解析String#intern](https://tech.meituan.com/2014/03/06/in-depth-understanding-string-intern.html)
 
 [JavaNIO浅析](https://tech.meituan.com/2016/11/04/nio.html)
+
+[Linux IO模式以及select、poll、epoll详解](https://segmentfault.com/a/1190000003063859)
 
 [从实际案例聊聊Java应用的GC优化](https://tech.meituan.com/2017/12/29/jvm-optimize.html)
 
@@ -59,6 +59,10 @@ tags: Java
 [分布式队列编程优化篇](https://tech.meituan.com/2016/08/05/distributed-queue-based-programming-optimization.html)
 
 [缓存那些事](https://tech.meituan.com/2017/03/17/cache-about.html)
+
+[日志：每个软件工程师都应该直到的有关实时数据的统一抽象（英文版）](https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying)
+
+[日志：每个软件工程师都应该直到的有关实时数据的统一抽象（中文版）](https://www.kancloud.cn/kancloud/log-real-time-datas-unifying/58708)
 
 ### 一些网站
 
