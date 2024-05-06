@@ -103,4 +103,4 @@ theme: cactus
 deploy:
   type: git
   repository: https://github.com/Allupeng/allupeng.github.io
-  branch: gh-pages
+  branch: master
